@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Durbek va uning jamoasi - professional dasturlash xizmatlari">
+  <title>Durbek va Jamoasi - Professional Dasturlash Xizmatlari</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <button class="dark-mode-toggle" aria-label="Dark mode toggle">🌓</button>
+
+  <header>
+    <div class="container nav">
+      <h1 class="logo">
+        <img src="LOGO.png" alt="Durbek Logo" width="40" height="40" loading="lazy"/>
+        ShiftTrio<span>.</span>
+      </h1>
+      <nav>
+        <a href="#home" class="nav-link">Bosh sahifa</a>
+        <a href="#about" class="nav-link">Biz haqimizda</a>
+        <a href="#services" class="nav-link">Xizmatlar</a>
+        <a href="#projects" class="nav-link">Loyihalar</a>
+        <a href="#contact" class="nav-link">Bog'lanish</a>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section home">
+      <div id="particles-js"></div>
+      <div class="container">
+        <h1 data-aos="fade-up">Biz bilan tanishing</h1>
+        <p class="lead" data-aos="fade-up" data-aos-delay="100">Salom! Men Durbek, backend dasturchiman. Bu sayt orqali men va mening jamoam haqidagi ma'lumotlarni taqdim etamiz.</p>
+        <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+          <a href="#about" class="btn btn-primary">Biz haqimizda</a>
+          <a href="#projects" class="btn btn-secondary">Loyihalarimiz</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="leader" data-aos="fade-right">
+          <img src="Durbek.jpg" alt="Durbek" class="leader-img" width="150" height="150" loading="lazy"/>
+          <div class="leader-info">
+            <h2>Durbek – Jamoa Lideri</h2>
+            <p>Java backend dasturchi. Telegram botlar, veb servislar va PostgreSQL bazalari bilan ishlashda katta tajribaga ega. Har doim foydalanuvchi uchun qulay, xavfsiz va zamonaviy tizimlar yaratishga intiladi.</p>
+            <div class="skills">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Telegram API</span>
+              <span class="skill-tag">Spring Boot</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="team-title" data-aos="fade-up">Bizning Jamoa</h2>
+        <div class="team">
+          <div class="member-card" onclick="openModal('modal-jasur')" tabindex="0" role="button" aria-label="Jasur haqida ko'proq" data-aos="zoom-in" data-aos-delay="100">
+            <img src="Jasur.jpg" alt="Jasur" width="120" height="120" loading="lazy"/>
+            <h3>Jasur</h3>
+            <p>Tester</p>
+          </div>
+          <div class="member-card" onclick="openModal('modal-aziz')" tabindex="0" role="button" aria-label="Aziz haqida ko'proq" data-aos="zoom-in" data-aos-delay="200">
+            <img src="Aziz.jpg" alt="Aziz" width="120" height="120" loading="lazy"/>
+            <h3>Aziz</h3>
+            <p>Frontend Developer</p>
+          </div>
+          <div class="member-card" onclick="openModal('modal-nodira')" tabindex="0" role="button" aria-label="Nodira haqida ko'proq" data-aos="zoom-in" data-aos-delay="300">
+            <img src="Nodira.jpg" alt="Nodira" width="120" height="120" loading="lazy"/>
+            <h3>Nodira</h3>
+            <p>UI/UX Designer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 data-aos="fade-up">Xizmatlar</h2>
+        <div class="service-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="icon">💻</i>
+            <h3>Veb Dasturlash</h3>
+            <p>Zamonaviy veb ilovalar va saytlar ishlab chiqamiz</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="icon">🤖</i>
+            <h3>Telegram Botlar</h3>
+            <p>Turli funksiyalarga ega aqlli telegram botlar</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <i class="icon">📱</i>
+            <h3>Mobil Ilovalar</h3>
+            <p>iOS va Android platformalariga mobil ilovalar</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <i class="icon">🎨</i>
+            <h3>Dizayn Xizmatlari</h3>
+            <p>Zamonaviy UI/UX dizayn va brending</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 data-aos="fade-up">Loyihalar</h2>
+        <div class="project-cards">
+          <div class="project-card" onclick="openProjectModal('Fast-Food Bot', 'Java, PostgreSQL, Telegram API — foydalanuvchilarga fast-food buyurtma berishga yordam beradi.', 'FastFoodBot.jpg')" tabindex="0" role="button" aria-label="Fast-Food Bot loyihasi haqida ko'proq" data-aos="fade-up" data-aos-delay="100">
+            <img src="FastFoodBot.jpg" alt="Fast-Food Bot" loading="lazy"/>
+            <div class="project-info">
+              <h3>Fast-Food Bot</h3>
+              <p>Java, PostgreSQL, Telegram API</p>
+            </div>
+          </div>
+    
+          <div class="project-card" onclick="openProjectModal('Admin Panel', 'Telegram bot uchun to\'lov nazorati, buyurtmalar va foydalanuvchi boshqaruvi.', 'AdminPanel.jpg')" tabindex="0" role="button" aria-label="Admin Panel loyihasi haqida ko'proq" data-aos="fade-up" data-aos-delay="200">
+            <img src="AdminPanel.jpg" alt="Admin Panel" loading="lazy"/>
+            <div class="project-info">
+              <h3>Admin Panel</h3>
+              <p>Telegram bot boshqaruvi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 data-aos="fade-up">Bog'lanish</h2>
+        <div class="contact-container">
+          <form id="contact-form" class="contact-form" data-aos="fade-right">
+            <div class="form-group">
+              <label for="name">Ismingiz *</label>
+              <input type="text" id="name" name="name" placeholder="Ismingiz" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon raqamingiz *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+998 XX XXX XX XX" required />
+            </div>
+            <div class="form-group">
+              <label for="reason">Murojaat sababi *</label>
+              <select id="reason" name="reason" required>
+                <option value="" disabled selected>Sababni tanlang</option>
+                <option value="Veb sayt yasatish">Veb sayt yasatish</option>
+                <option value="Telegram bot buyurtma">Telegram bot buyurtma</option>
+                <option value="Mobil ilova ishlab chiqish">Mobil ilova ishlab chiqish</option>
+                <option value="Dizayn xizmati">Dizayn xizmati</option>
+                <option value="Boshqa savol">Boshqa savol</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Xabaringiz *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Xabaringiz..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Yuborish</button>
+            <div id="form-message" class="form-message"></div>
+          </form>
+          <div class="contact-info" data-aos="fade-left">
+            <h3>Biz bilan aloqa</h3>
+            <div class="info-item">
+              <i class="icon">📍</i>
+              <p>Toshkent, O'zbekiston</p>
+            </div>
+            <div class="info-item">
+              <i class="icon">📧</i>
+              <p>info@durbek.uz</p>
+            </div>
+            <div class="info-item">
+              <i class="icon">📱</i>
+              <p>+998 93 073 87 89</p>
+            </div>
+            <div class="social-links">
+              <a href="https://t.me/ShiftTrio" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <i class="icon">🔗</i> Telegram
+              </a>
+              <a href="https://instagram.com/youraccount" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="icon">📷</i> Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Loyihalar uchun modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('projectModal')" aria-label="Yopish">&times;</span>
+      <img id="projectModalImage" src="" alt="Loyiha rasmi" loading="lazy"/>
+      <h3 id="projectModalTitle"></h3>
+      <p id="projectModalDesc"></p>
+      <button class="btn btn-secondary" onclick="closeModal('projectModal')">Yopish</button>
+    </div>
+  </div>
+
+  <!-- Jasur uchun modal -->
+  <div id="modal-jasur" class="modern-modal">
+    <div class="modal-content">
+      <div class="modal-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <span class="close" onclick="closeModal('modal-jasur')">&times;</span>
+        <img src="Jasur.jpg" alt="Jasur" class="modal-avatar" loading="lazy"/>
+        <div class="member-titles">
+          <h3>Jasur Qodirov</h3>
+          <p class="position">Quality Assurance Engineer</p>
+        </div>
+      </div>
+      
+      <div class="modal-body">
+        <div class="member-bio">
+          <p>3+ yillik tajribaga ega professional tester. Telegram botlar va veb ilovalar uchun kompleks test rejalarini ishlab chiqadi.</p>
+        </div>
+        
+        <div class="skills-section">
+          <h4><i class="icon">💻</i> Texnik Mahoratlar</h4>
+          <div class="skill-item">
+            <span>Selenium</span>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>JUnit</span>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Postman</span>
+            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+          </div>
+        </div>
+        
+        <div class="social-links">
+          <a href="#" class="social-btn telegram" aria-label="Telegram">
+            <i class="icon">✈️</i>
+          </a>
+          <a href="#" class="social-btn linkedin" aria-label="LinkedIn">
+            <i class="icon">👔</i>
+          </a>
+          <a href="#" class="social-btn github" aria-label="GitHub">
+            <i class="icon">💻</i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aziz uchun modal -->
+  <div id="modal-aziz" class="modern-modal">
+    <div class="modal-content">
+      <div class="modal-header" style="background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+        <span class="close" onclick="closeModal('modal-aziz')">&times;</span>
+        <img src="Aziz.jpg" alt="Aziz" class="modal-avatar" loading="lazy"/>
+        <div class="member-titles">
+          <h3>Aziz Karimov</h3>
+          <p class="position">Frontend Developer</p>
+        </div>
+      </div>
+      
+      <div class="modal-body">
+        <div class="member-bio">
+          <p>Yaratuvchan frontend dasturchi, foydalanuvchilar uchun intuitiv va chiroyli interfeyslar yaratishga ixtisoslashgan.</p>
+        </div>
+        
+        <div class="skills-section">
+          <h4><i class="icon">🛠️</i> Asosiy Texnologiyalar</h4>
+          <div class="skill-item">
+            <span>React.js</span>
+            <div class="progress-bar"><div class="progress" style="width: 92%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Vue.js</span>
+            <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>TypeScript</span>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Tailwind CSS</span>
+            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+          </div>
+        </div>
+        
+        <div class="social-links">
+          <a href="#" class="social-btn telegram" aria-label="Telegram">
+            <i class="icon">✈️</i>
+          </a>
+          <a href="#" class="social-btn dribbble" aria-label="Dribbble">
+            <i class="icon">🏀</i>
+          </a>
+          <a href="#" class="social-btn behance" aria-label="Behance">
+            <i class="icon">🎨</i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nodira uchun modal -->
+  <div id="modal-nodira" class="modern-modal">
+    <div class="modal-content">
+      <div class="modal-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+        <span class="close" onclick="closeModal('modal-nodira')">&times;</span>
+        <img src="Nodira.jpg" alt="Nodira" class="modal-avatar" loading="lazy"/>
+        <div class="member-titles">
+          <h3>Nodira Xasanova</h3>
+          <p class="position">UI/UX Designer</p>
+        </div>
+      </div>
+      
+      <div class="modal-body">
+        <div class="member-bio">
+          <p>Foydalanuvchi tajribasi va interfeys dizayniga ixtisoslashgan kreativ dizayner. 50+ loyihada ishlagan tajribaga ega.</p>
+        </div>
+        
+        <div class="skills-section">
+          <h4><i class="icon">🎨</i> Dizayn Vositalari</h4>
+          <div class="skill-item">
+            <span>Figma</span>
+            <div class="progress-bar"><div class="progress" style="width: 98%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Adobe XD</span>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Photoshop</span>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Illustrator</span>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+          </div>
+        </div>
+        
+        <div class="social-links">
+          <a href="#" class="social-btn instagram" aria-label="Instagram">
+            <i class="icon">📷</i>
+          </a>
+          <a href="#" class="social-btn behance" aria-label="Behance">
+            <i class="icon">🎨</i>
+          </a>
+          <a href="#" class="social-btn pinterest" aria-label="Pinterest">
+            <i class="icon">📌</i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Durbek uchun modal -->
+  <div id="modal-durbek" class="modern-modal">
+    <div class="modal-content">
+      <div class="modal-header" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+        <span class="close" onclick="closeModal('modal-durbek')">&times;</span>
+        <img src="Durbek.jpg" alt="Durbek" class="modal-avatar" loading="lazy"/>
+        <div class="member-titles">
+          <h3>Durbek Toshmatov</h3>
+          <p class="position">Backend Team Lead</p>
+        </div>
+      </div>
+      
+      <div class="modal-body">
+        <div class="member-bio">
+          <p>5+ yillik tajribaga ega backend mutaxassisi. Murakkab tizimlarni arxitekturasini ishlab chiqish va implementatsiya qilish bo'yicha ekspert.</p>
+        </div>
+        
+        <div class="skills-section">
+          <h4><i class="icon">⚙️</i> Texnik Stack</h4>
+          <div class="skill-item">
+            <span>Java/Spring Boot</span>
+            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>PostgreSQL</span>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Docker/K8s</span>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Telegram API</span>
+            <div class="progress-bar"><div class="progress" style="width: 92%;"></div></div>
+          </div>
+        </div>
+        
+        <div class="social-links">
+          <a href="#" class="social-btn telegram" aria-label="Telegram">
+            <i class="icon">✈️</i>
+          </a>
+          <a href="#" class="social-btn linkedin" aria-label="LinkedIn">
+            <i class="icon">👔</i>
+          </a>
+          <a href="#" class="social-btn twitter" aria-label="Twitter">
+            <i class="icon">🐦</i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="LOGO.png" alt="Durbek Logo" width="30" height="30" loading="lazy"/>
+          <span>Durbek<span>.</span></span>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Bosh sahifa</a>
+          <a href="#about">Biz haqimizda</a>
+          <a href="#services">Xizmatlar</a>
+          <a href="#projects">Loyihalar</a>
+          <a href="#contact">Bog'lanish</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://t.me/yourtelegramchannel" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <i class="icon">🔗</i>
+          </a>
+          <a href="https://instagram.com/youraccount" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="icon">📷</i>
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Durbek va Jamoasi. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
